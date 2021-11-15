@@ -27,6 +27,17 @@ section {
     padding: 2rem 9%;
 }
 
+.heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: var(--black);
+    padding: 1rem;
+}
+
+
+/* .heading span{} */
+
 .btn {
     display: inline-block;
     margin-top: 1rem;
@@ -228,6 +239,38 @@ header .icons a:hover {
     right: 3rem;
 }
 
+.service .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background: #f9f9f9;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.service .box-container .box {
+    text-align: center;
+    flex: 1 1 30rem;
+}
+
+.service .box-container .box i {
+    font-size: 4rem;
+    color: var(--orange);
+}
+
+.service .box-container .box h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-top: 1rem;
+}
+
+.service .box-container .box p {
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
 
 /* media queries */
 
@@ -236,6 +279,9 @@ header .icons a:hover {
         font-size: 55%;
     }
     header {
+        padding: 2rem;
+    }
+    section {
         padding: 2rem;
     }
 }
@@ -265,10 +311,20 @@ header .icons a:hover {
         display: block;
         text-align: center;
     }
+    .home .slide-container .slide .image .text {
+        width: 60%;
+    }
+    .home #prev,
+    .home #next {
+        top: 85%;
+    }
 }
 
 @media screen and (max-width:400px) {
     html {
         font-size: 50%;
+    }
+    .home .slide-container .slide .image {
+        padding-bottom: 6.0rem;
     }
 }
